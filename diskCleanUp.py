@@ -12,3 +12,9 @@ class MyHandler(FileSystemEventHandler):
             if filename != "Personal":
                 new_name = filename
                 file_exists = os.path.isfile(folder_destination + '/' + new_name)
+                while file_exists:
+                    i += 1
+                    new_name = os.path.splitext(folder_to_track + '/' + new_name)[0] + str[i] + os.path.splitext(folder_to_track + '/' + new_name)[1]
+                    new_name = new_name.split('/')[4]
+                    file_exists = os.path.isfile(folder_destination + '/' + new_name)
+                

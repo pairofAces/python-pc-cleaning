@@ -18,3 +18,7 @@ class MyHandler(FileSystemEventHandler):
                     new_name = new_name.split('/')[4]
                     file_exists = os.path.isfile(folder_destination + '/' + new_name)
                 
+                src = folder_to_track + '/' + filename
+                new_name = folder_destination + '/' + new_name
+                os.rename(src, new_name)
+                

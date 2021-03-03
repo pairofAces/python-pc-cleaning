@@ -24,3 +24,7 @@ class MyHandler(FileSystemEventHandler):
 
 folder_to_track = '/Users/karanchauhan/Downloads'
 folder_destination = '/Users/karanchauhan/Desktop/Personal'
+event_handler = MyHandler()
+observer = Observer()
+observer.schedule(event_handler, folder_to_track, recursive=True)
+observer.start()

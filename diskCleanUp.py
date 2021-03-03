@@ -23,3 +23,4 @@ class MyHandler(FileSystemEventHandler):
                 os.rename(src, new_name)
 
 folder_to_track = '/Users/karanchauhan/Downloads'
+folder_destination = '/Users/karanchauhan/Desktop/Personal'

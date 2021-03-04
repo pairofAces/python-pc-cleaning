@@ -25,6 +25,17 @@ class MyHandler(FileSystemEventHandler):
 # create a dictionary with file types pointing to destinations
 extensions_folders = {
     '.aif' : '/Users/karanchauhan/Music/Downloaded',
+    '.cda' : '/Users/karanchauhan/Music/Downloaded',
+    '.mid' : '/Users/karanchauhan/Music/Downloaded',
+    '.midi' : '/Users/karanchauhan/Music/Downloaded',
+    '.mp3' : '/Users/karanchauhan/Music/Downloaded',
+    '.mpa' : '/Users/karanchauhan/Music/Downloaded',
+    '.ogg' : '/Users/karanchauhan/Music/Downloaded',
+    '.wav' : '/Users/karanchauhan/Music/Downloaded',
+    '.wma' : '/Users/karanchauhan/Music/Downloaded',
+    '.wpl' : '/Users/karanchauhan/Music/Downloaded',
+
+    '.txt' : '/Users/karanchauhan/Documents/TextFiles',
 }
 
 # folder_to_track = '/Users/karanchauhan/Downloads'

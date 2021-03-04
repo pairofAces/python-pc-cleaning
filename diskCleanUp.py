@@ -24,10 +24,11 @@ class MyHandler(FileSystemEventHandler):
 
 # create a dictionary with file types pointing to destinations
 extensions_folders = {
-    
+
 }
 
-folder_to_track = '/Users/karanchauhan/Downloads'
+# folder_to_track = '/Users/karanchauhan/Downloads'
+folder_to_track = '/Users/karanchauhan/Desktop'
 folder_destination = '/Users/karanchauhan/Desktop/Personal'
 event_handler = MyHandler()
 observer = Observer()

@@ -24,7 +24,7 @@ class MyHandler(FileSystemEventHandler):
 
 # create a dictionary with file types pointing to destinations
 extensions_folders = {
-
+    '.aif' : '/Users/karanchauhan/Music/Downloaded',
 }
 
 # folder_to_track = '/Users/karanchauhan/Downloads'

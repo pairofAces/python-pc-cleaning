@@ -22,6 +22,11 @@ class MyHandler(FileSystemEventHandler):
                 new_name = folder_destination + '/' + new_name
                 os.rename(src, new_name)
 
+# create a dictionary with file types pointing to destinations
+extensions_folders = {
+    
+}
+
 folder_to_track = '/Users/karanchauhan/Downloads'
 folder_destination = '/Users/karanchauhan/Desktop/Personal'
 event_handler = MyHandler()
